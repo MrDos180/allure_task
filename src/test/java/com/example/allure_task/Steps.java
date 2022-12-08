@@ -37,12 +37,8 @@ public class Steps {
     }
 
     @Step("Проверяем наличие Issue с номером {issue}")
-    public void shouldSeeIssueWithNumber(String issue) {
-        $(withText(issue)).should(Condition.exist);
+    public void shouldSeeIssueWithText(String issue) {
+        $(withText(issue)).should(Condition.visible);
     }
 
-    @Attachment(value = "Screenshot", type = "image/png", fileExtension = "png")
-    public byte[] takeScreenshot() {
-        return ((TakesScreenshot) WebDriverRunner.getWebDriver()).getScreenshotAs(OutputType.BYTES);
-    }
 }
