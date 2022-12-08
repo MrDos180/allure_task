@@ -27,8 +27,8 @@ repositories {
 dependencies {
     testImplementation(
             'org.junit.jupiter:junit-jupiter-api:5.9.0',
-            'com.codeborne:selenide:6.7.2',
-            'io.qameta.allure:allure-selenide:2.19.0'
+            'com.codeborne:selenide:6.10.1',
+            'io.qameta.allure:allure-selenide:2.20.0'
     )
 
     testRuntimeOnly('org.junit.jupiter:junit-jupiter-engine:5.9.0')
